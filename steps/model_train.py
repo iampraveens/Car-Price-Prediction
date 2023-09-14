@@ -43,7 +43,7 @@ def train_model(
             return trained_model
         
         elif config.model_name == 'GradientBoostingRegressor':
-            model = GradientBoostingRegressor()
+            model = GradientBoostingRegressor_Model()
             trained_model = model.train(X_train, y_train, learning_rate=0.1,
                                         max_depth=5, n_estimators=300, min_samples_leaf=2,
                                         min_samples_split=2, verbose=2)

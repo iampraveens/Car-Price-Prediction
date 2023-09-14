@@ -15,7 +15,7 @@ if __name__ == "__main__":
         model = train_pipeline(data_path=data_path)
         
         if tracking_url_store_type != "file":
-            mlflow.sklearn.log_model(model, "model", registered_model_name="RandomForestClassifier")
+            mlflow.sklearn.log_model(model, "model", registered_model_name="XGBoostRegressor")
         else:
             mlflow.sklearn.log_model(model, "model")
             
