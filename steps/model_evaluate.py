@@ -3,6 +3,7 @@ from typing import Tuple
 from typing_extensions import Annotated
 
 import pandas as pd
+import mlflow
 from zenml import step
 from sklearn.base import RegressorMixin
 
@@ -22,12 +23,15 @@ def evaluate_model(model: RegressorMixin,
         prediction = model.predict(X_test)
         mse_class = MSE()
         mse = mse_class.calculate_scores(y_test, prediction)
+        mlflow.log_metric('MSE', mse)
         
         r2_class = R2_Score()
         r2 = r2_class.calculate_scores(y_test, prediction)
+        mlflow.log_metric('r2_score', r2)
         
         mae_class = MAE()
         mae = mae_class.calculate_scores(y_test, prediction)
+        mlflow.log_metric('MAE', mae)
         
         return mse, r2, mae
     except Exception as e:

@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import logging
 
 import pandas as pd
+import mlflow
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import ElasticNet
 from sklearn.ensemble import RandomForestRegressor
@@ -34,6 +35,8 @@ class ElasticNet_Model(Model):
             en = ElasticNet(alpha=alpha, l1_ratio=l1_ratio)
             en.fit(X_train, y_train)
             logging.info(f"Model training completed")
+            mlflow.log_param('alpha', alpha)
+            mlflow.log_param('l1_ratio', l1_ratio)
             return en
         except Exception as e:
             logging.error(f"Error in training model {e}")
@@ -49,6 +52,9 @@ class RandomForestRegressor_Model(Model):
                                        n_estimators=n_estimators, n_jobs=n_jobs)
             rf.fit(X_train, y_train)
             logging.info(f"Model training completed")
+            mlflow.log_param('criterion', criterion)
+            mlflow.log_param('max_depth', max_depth)
+            mlflow.log_param('n_estimators', n_estimators)
             return rf
         except Exception as e:
             logging.error(f"Error in training model {e}")
@@ -102,6 +108,9 @@ class GradientBoostingRegressor_Model(Model):
                                            min_samples_split=min_samples_split, verbose=verbose)
             gb.fit(X_train, y_train)
             logging.info(f"Model training completed")
+            mlflow.log_param('learning_rate', learning_rate)
+            mlflow.log_param('max_depth', max_depth)
+            mlflow.log_param('n_estimators', n_estimators)
             return gb
         except Exception as e:
             logging.error(f"Error in training model {e}")
@@ -116,8 +125,11 @@ class XGBoostRegressor_Model(Model):
                                n_estimators=n_estimators, reg_lambda=reg_lambda)
             xgb.fit(X_train, y_train)
             logging.info(f"Model training completed")
-            fim = pd.Series(xgb.feature_importances_, index= X_train.columns)
-            print(fim.sort_values(ascending=False))
+            # fim = pd.Series(xgb.feature_importances_, index= X_train.columns)
+            # print(fim.sort_values(ascending=False))
+            mlflow.log_param('learning_rate', learning_rate)
+            mlflow.log_param('max_depth', max_depth)
+            mlflow.log_param('n_estimators', n_estimators)
             return xgb
         except Exception as e:
             logging.error(f"Error in training model {e}")
