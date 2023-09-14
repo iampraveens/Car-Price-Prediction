@@ -65,7 +65,7 @@ class DataPreProcessStrategy(DataStrategy):
             data['seats'] = data['seats'].clip(lower_thersold_seats, upper_thersold_seats)
             
             data = pd.get_dummies(data, columns=['fuel', 'seller_type', 'transmission'], drop_first=True, dtype='int')
-            data['owner'] = data['owner'].map({'Test Drive Car': 4, 'Fourth & Above Owner': 4, 'Third Owner': 3, 'Second Owner': 2, 'First Owner': 1})
+            data['owner'] = data['owner'].map({'Test Drive Car': 3, 'Fourth & Above Owner': 0, 'Third Owner': 1, 'Second Owner': 2, 'First Owner': 3})
             
             return data
         except Exception as e:
