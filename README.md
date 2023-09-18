@@ -47,3 +47,9 @@ git clone https://github.com/iampraveens/Car-Price-Prediction-MLOps.git
 ```bash
 pip install -r requirements.txt
 ```
+3. Training the Model:
+
+```bash
+python ./steps/run_pipeline.py
+```
+-This command will execute the data cleaning, model training, and evaluation process
