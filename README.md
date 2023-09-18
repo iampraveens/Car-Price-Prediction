@@ -39,4 +39,10 @@ To get started with the project, follow these steps:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/Car-Price-Prediction.git
+git clone https://github.com/iampraveens/Car-Price-Prediction-MLOps.git
+
+2. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+
