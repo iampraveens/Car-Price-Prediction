@@ -79,7 +79,7 @@ docker run -d -p 8501:8501 your_docker_username/car-price-prediction-app
 - To run as a container.
 
 Access the web app at `http://localhost:8501` or `your_ip_address:8501` in your web browser.
-Else if you want to access my pre-built container, here is the code to pull from docker hub(Public).
+Else if you want to access my pre-built container, here is the code below to pull from docker hub(Public).
 ```bash
 docker pull iampraveens/car-price-prediction-app:latest
 ```
