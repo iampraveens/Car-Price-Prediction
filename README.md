@@ -28,3 +28,8 @@ The project structure is organized as follows:
 - `app.py`: Streamlit-based web application for predicting car prices.
 - `requirements.txt`: Python dependencies for the project.
 - `Dockerfile`: Docker configuration for containerizing the web app.
+
+## Code Layout
+![car_price_layout](https://github.com/iampraveens/Car-Price-Prediction-MLOps/assets/125688218/fada7397-0d7f-4a19-9ff0-d395b3ca31be)
+
+
