@@ -70,5 +70,12 @@ streamlit run app.py
 You can also deploy the Car Price Prediction web application using Docker. Build the Docker image and run the container:
 ```bash
 docker build -t your_docker_username/car-price-prediction-app .
+```
+- To build a docker image.
+
+```bash
 docker run -d -p 8501:8501 your_docker_username/car-price-prediction-app
 ```
+- To run as a container.
+
+Access the web app at `http://localhost:8501` or `your_ip_address:8501` in your web browser.
