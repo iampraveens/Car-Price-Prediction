@@ -40,9 +40,10 @@ To get started with the project, follow these steps:
 
 ```bash
 git clone https://github.com/iampraveens/Car-Price-Prediction-MLOps.git
+```
 
 2. Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
-
+```
