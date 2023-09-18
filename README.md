@@ -33,4 +33,10 @@ The project structure is organized as follows:
 ## Code Layout
 ![car_price_layout](https://github.com/iampraveens/Car-Price-Prediction-MLOps/assets/125688218/fada7397-0d7f-4a19-9ff0-d395b3ca31be)
 
+## Getting Started
+To get started with the project, follow these steps:
 
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/Car-Price-Prediction.git
