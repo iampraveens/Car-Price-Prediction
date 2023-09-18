@@ -52,4 +52,4 @@ pip install -r requirements.txt
 ```bash
 python ./steps/run_pipeline.py
 ```
--This command will execute the data cleaning, model training, and evaluation process
+- This command will execute the data cleaning, model training, and evaluation process
