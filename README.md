@@ -7,6 +7,7 @@ Car Price Prediction is a comprehensive machine learning project that helps esti
 ## Table of Contents
 - [Overview](#overview)
 - [Project Structure](#project-structure)
+- [Code Layout](#code-layout)
 - [Getting Started](#getting-started)
 - [Training the Model](#training-the-model)
 - [Prediction](#prediction)
