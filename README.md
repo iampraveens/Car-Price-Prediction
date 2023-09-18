@@ -13,7 +13,7 @@ Car Price Prediction is a comprehensive machine learning project that helps esti
 - [Save the Model](#save-the-model)
 - [Prediction](#prediction)
 - [Dockerized Web App](#dockerized-web-app)
-- (Experimental Tracking)[#experimental-tracking)
+- [Experimental Tracking](#experimental-tracking)
 - [License](#license)
 
 ## Overview
