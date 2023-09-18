@@ -10,6 +10,7 @@ Car Price Prediction is a comprehensive machine learning project that helps esti
 - [Code Layout](#code-layout)
 - [Getting Started](#getting-started)
 - [Training the Model](#training-the-model)
+- [Save the Model](#save-the-model)
 - [Prediction](#prediction)
 - [Dockerized Web App](#dockerized-web-app)
 - [License](#license)
@@ -47,9 +48,21 @@ git clone https://github.com/iampraveens/Car-Price-Prediction-MLOps.git
 ```bash
 pip install -r requirements.txt
 ```
-##Training the Model
+## Training the Model
 
 ```bash
 python ./steps/run_pipeline.py
 ```
 - This command will execute the data cleaning, model training, and evaluation process
+
+## Save the Model
+
+```bash
+python ./steps/save_model.py
+```
+
+## Prediction
+
+```bash
+streamlit run app.py
+```
