@@ -66,3 +66,9 @@ python ./steps/save_model.py
 ```bash
 streamlit run app.py
 ```
+## Dockerized Web App
+You can also deploy the Car Price Prediction web application using Docker. Build the Docker image and run the container:
+```bash
+docker build -t your_docker_username/car-price-prediction-app .
+docker run -d -p 8501:8501 your_docker_username/car-price-prediction-app
+```
