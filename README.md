@@ -91,4 +91,4 @@ Else if you want to access my pre-built container, here is the code below to pul
 docker pull iampraveens/car-price-prediction-app:latest
 ```
 ## License 
-This project is licensed under the MIT License - see the [License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the (License)[https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt] file for details.
