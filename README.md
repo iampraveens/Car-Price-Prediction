@@ -93,4 +93,4 @@ docker pull iampraveens/car-price-prediction-app:latest
 ## License 
 This project is licensed under the MIT License - see the [License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
 
-This README provides an overview of your project, its structure, how to get started, how to train the model, make predictions, tracking the model and even deploy a Dockerized web app.
+This README provides an overview of the project, its structure, how to get started, how to train the model, make predictions, tracking the model and even deploy a Dockerized web app.
