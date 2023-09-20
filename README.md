@@ -71,7 +71,7 @@ streamlit run app.py
 ```bash
 https://dagshub.com/iampraveens/Car-Price-Prediction-MLOps/experiments/
 ```
-Here I've implemented MLFlow to track my models on `DagsHub`. Check out using about link
+Here I've implemented `MLFlow` to track my models on `DagsHub`. Check out using about link
 
 ## Dockerized Web App
 You can also deploy the Car Price Prediction web application using Docker. Build the Docker image and run the container:
